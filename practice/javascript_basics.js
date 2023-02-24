@@ -56,3 +56,12 @@ x --; // x = x - 1
 var x = 10;
 x += 2 // x = x + 2
 x -= 2 // x = x - 2
+
+// Creating function
+function capitaliseName() {
+    var name = prompt('What is your name?');
+    var newName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    alert('Hello'+ newName);
+}
+
+capitaliseName();

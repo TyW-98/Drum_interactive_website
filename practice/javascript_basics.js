@@ -164,7 +164,6 @@ console.log(list.includes(2))
 // Fizz Buzz FOR loop practice
 var output = [];
 
-
 for (var x = 1; x < 101; x++) {
   if (x %5 ==0 && x %3 ==0) {
     output.push("FizzBuzz");
@@ -245,5 +244,29 @@ while (nBottles >= 0) {
     nBottles--;
 }
 
+// Simple FOR loop practice
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
 
+
+// FibonacciGenerator
+function fibonacciGenerator(n) {
+  
+    var output = []
+      if (n === 1) {
+        output = [0];
+      } else if (n === 2) {
+        output = [0,1];
+      } else {
+        output = [0,1];
+        
+        for (var i = 0; i < n; i++) {
+          var sum = output[i] + output[i+1];
+          output.push(sum);
+        }
+      }
+    return output
+  }
+  
   

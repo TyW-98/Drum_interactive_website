@@ -88,3 +88,16 @@ if (n > 55) {
 } else {
     alert("Your team only have " + n + "% chance to win the game");
 }
+
+/* Comparators
+equals to (Also check for datatypes) - ===
+not equals to - !==
+less than - <
+greater than - >
+less than or equal to - <=
+greater than or equal to - >=
+equals to (Dosen't check for datatypes) - ==
+AND - &&
+OR - ||
+NOT - !
+*/

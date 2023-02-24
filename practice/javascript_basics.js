@@ -221,3 +221,29 @@ function fizzBuzz() {
 }
 
 fizzBuzz();
+
+// WHILE loop beer practice
+
+function beer(nBottles) {  
+  
+    console.log(nBottles + ' bottles of beer on the wall, ' + nBottles + ' bottles of beer.')
+  
+    if (nBottles !== 0 && nBottles !== 1) {
+      console.log('Take one down and pass it around, ' + nBottles + ' bottles of beer on the wall.')
+    } else if (nBottles === 1) {
+      console.log('Take one down and pass it around, no more bottles of beer on the wall.')
+    } else {
+      console.log('Go to the store and buy some more, 99 bottles of beer on the wall')
+    }
+  
+}
+  
+var nBottles = 99
+
+while (nBottles >= 0) {
+    beer(nBottles);
+    nBottles--;
+}
+
+
+  

@@ -76,3 +76,15 @@ function calculateNumberOfItems(money) {
 
 var change = calculateNumberOfItems(10);
 alert(change);
+
+// Random number generator
+var userInput = prompt("What is the teams name?");
+var n = Math.round((Math.random() * 100),2) ;
+alert(userInput + ' have a percentage channce of ' + n + '% to win the game');
+
+// IF and ELSE statements
+if (n > 55) {
+    alert("Your team is gonna win the game with " + n + "%");
+} else {
+    alert("Your team only have " + n + "% chance to win the game");
+}

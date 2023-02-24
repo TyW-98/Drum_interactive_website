@@ -101,3 +101,54 @@ AND - &&
 OR - ||
 NOT - !
 */
+
+// IF, ELSE IF and ELSE statements
+if (n > 55 && 25) {
+    alert("Your team is gonna win the game with " + n + "%");
+} else if (n < 25) {
+  	alert("Your team has a very slim chance of winning");
+} else {
+    alert("Your team only have " + n + "% chance to win the game");
+}
+
+// BMI Calculator
+function bmiCalculator (weight, height) {
+    var bmi = Math.round(weight/Math.pow(height,2),3);
+    var interpretation = "0";
+    
+    if (bmi < 18.5) {
+        interpretation = "Your BMI is " + bmi + " ,so you are underweight."
+    } else if (bmi > 18.5 && bmi < 24.9){
+        interpretation = "Your BMI is " + bmi + " ,so you have a normal weight."
+    } else {
+        interpretation = "Your BMI is " + bmi + " ,so you are overweight."
+    }
+    
+    return interpretation;
+}
+
+bmi = bmiCalculator(80,1.85)
+console.log(bmi)
+
+// Leap year checker
+function isLeap(year) {
+    var output = 0
+
+    if (year %4 === 0) {
+        if (year %100 === 0) {
+            if (year %400 === 0) {
+                output = "Leap year."
+            } else {
+                output = "Not leap year."
+            }
+        } else {
+            output = "Leap year."
+        }
+    } else {
+        output = "Not leap year."
+    }
+    
+    return output
+}
+
+console.log(isLeap(2400))

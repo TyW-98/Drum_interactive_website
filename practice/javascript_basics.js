@@ -152,3 +152,49 @@ function isLeap(year) {
 }
 
 console.log(isLeap(2400))
+
+// Arrays
+var list = [1,2,3,4,5,6,7,8,9]
+var listLength = list.length;
+var item1 = list[0];
+
+// Arrays include check if item 
+console.log(list.includes(2))
+
+// Fizz Buzz FOR loop practice
+var output = [];
+
+
+for (var x = 1; x < 101; x++) {
+  if (x %5 ==0 && x %3 ==0) {
+    output.push("FizzBuzz");
+  } else if (x % 5 == 0) {
+    output.push("Buzz");
+  } else if (x % 3 == 0) {
+    output.push("Fizz");
+  } else {
+    output.push(x);
+  }
+}
+
+console.log(output)
+
+// Fizz Buzz function practice
+var output = [];
+var x = 1;
+
+function fizzBuzz() {
+    if (x %5 == 0 && x %3 == 0) {
+      output.push('FizzBuzz');
+    } else if (x %5 == 0) {
+      output.push('Buzz');
+    } else if (x %3 ==0) {
+      output.push('Fizz');
+    } else {
+      output.push(x);
+    }
+    x++;
+    console.log(output);
+  }
+  
+fizzBuzz();

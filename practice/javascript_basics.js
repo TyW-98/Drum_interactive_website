@@ -65,3 +65,14 @@ function capitaliseName() {
 }
 
 capitaliseName();
+
+// create function to calculate number of items
+function calculateNumberOfItems(money) {
+    var numberOfItems = Math.floor(money/1.5);
+    var remainder = money % 1.5;
+    console.log(numberOfItems + ' items with ' + remainder);
+    return remainder;
+}
+
+var change = calculateNumberOfItems(10);
+alert(change);

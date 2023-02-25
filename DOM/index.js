@@ -18,4 +18,7 @@ document.querySelector('input[type="checkbox"]');
 /* To send a click command to the tickbox */
 document.querySelector('input[type="checkbox"]').click();
 
+/* Select last element on the website list */
+var thirdItem = document.querySelector('ul').lastElementChild;
+thirdItem.innerHTML = 'Instagram page';
 

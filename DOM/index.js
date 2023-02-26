@@ -61,6 +61,9 @@ button.style.backgroundColor ='yellow';
 document.querySelector("btn").classList.add("btn-2")
 /* To remove class from classlist */
 document.querySelector("btn").classList.remove("btn-2")
-
+ 
 // Alternatively can use toggle like on/off
 document.querySelector('btn').classList.toggle('btn-2')
+
+// Use .innerHTML to modify the font
+document.querySelector(".title").innerHTML = "<strong>Bold Good Bye</strong>"

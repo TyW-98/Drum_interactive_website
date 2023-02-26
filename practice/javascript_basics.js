@@ -267,6 +267,4 @@ function fibonacciGenerator(n) {
         }
       }
     return output
-  }
-  
-  
+}

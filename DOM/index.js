@@ -53,3 +53,14 @@ var link = document.querySelectorAll('#list .link');
 var googleLink = document.querySelector('#list .google-pg')
 googleLink.style.color = 'red';
 
+/* Change background color of button */
+var button = document.querySelector('#btn');
+button.style.backgroundColor ='yellow';
+
+/* Add class to existing class list. This can be used to change the select of the button by having another css for btn-2*/
+document.querySelector("btn").classList.add("btn-2")
+/* To remove class from classlist */
+document.querySelector("btn").classList.remove("btn-2")
+
+// Alternatively can use toggle like on/off
+document.querySelector('btn').classList.toggle('btn-2')

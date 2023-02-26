@@ -67,3 +67,9 @@ document.querySelector('btn').classList.toggle('btn-2')
 
 // Use .innerHTML to modify the font
 document.querySelector(".title").innerHTML = "<strong>Bold Good Bye</strong>"
+
+// Get element's attribute
+document.querySelector('.google-pg').getAttribute("href")
+
+// Set element's attribute
+document.querySelector('.google-pg').setAttribute('href', 'https://www.youtube.com')

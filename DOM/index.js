@@ -42,5 +42,14 @@ button.innerHTML = 'Click me';
 var button = document.querySelector('#btn');
 var facebook = document.querySelector('.facebook');
 
+/* Can also combine selectors */
+var instagram = document.querySelector('#list .instagram-pg')
+instagram.innerHTML = 'instagram';
 
+/* Select multiple elements with same classname*/
+var link = document.querySelectorAll('#list .link');
+
+/* Change google link color to red */
+var googleLink = document.querySelector('#list .google-pg')
+googleLink.style.color = 'red';
 

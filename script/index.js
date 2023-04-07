@@ -18,3 +18,10 @@ for (var i = 0; i < drumElements.length; i++) {
 
     });
 }
+
+document.addEventListener("keydown", function (event) {
+    console.log(event.key)
+
+    const audio = new Audio ("sounds/" + audioKey.find((sfx) => sfx.key === event.key).audio)
+    audio.play();
+});
